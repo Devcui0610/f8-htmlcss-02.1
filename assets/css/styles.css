@@ -1,0 +1,377 @@
+/* =============
+TỐI ƯU KHI CODE
+===============*/
+* {
+    box-sizing: border-box; /* Hỗ trợ căn chỉnh khối */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/* ====
+Variable
+======*/
+:root {
+    --primary-color: #1ebfc1;
+    --title-color: #0d1111;
+}
+
+/* ====
+COMMON
+======*/
+.main-content {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.title {
+    color: var(--title-color);
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 14px;
+    color: #fff;
+    border-radius: 14px;
+    background: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.desc {
+    font-size: 1.8rem;
+}
+
+/* ========= HEADER ========== */
+.fixed {
+    padding-top: 44px;
+    position: sticky;
+    top: -44px;
+    background: #fff;
+    z-index: 1;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.header .logo {
+    /* margin-right: 235px; */
+    margin-right: 20.1%;
+}
+
+.header .navbar .list {
+    display: flex;
+}
+
+.header .navbar .item a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    padding: 12px 19.5px;
+    transition: all 0.3s;
+}
+
+.header .navbar .active,
+.header .navbar .item a:hover {
+    text-shadow: #2f3a3b 1px 0 0;
+}
+
+.header .navbar .action {
+    margin-left: auto;
+}
+
+.header .navbar .sign-in {
+    color: #494949;
+    font-size: 1.6rem;
+    transition: all 0.2s;
+}
+
+.header .navbar .sign-in:hover {
+    color: var(--primary-color);
+}
+
+.header .navbar .sign-up {
+    display: inline-block;
+    padding: 15px 22px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 24px;
+    transition: all 0.3s;
+}
+
+.header .navbar .sign-up:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* ========= HERO ========== */
+.hero-wrap {
+    padding: 42px 0 79px;
+    /* background: orange; */
+}
+
+.hero-wrap .body {
+    display: flex;
+    align-items: center;
+}
+
+.hero-wrap .info .intro {
+    color: #767e7e;
+    font-size: 1.4rem;
+    width: 458px;
+}
+
+.hero-wrap .info .title {
+    color: var(--title-color);
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16;
+    margin-top: 18px;
+}
+
+.hero-wrap .info .desc {
+    color: #9da6a5;
+    line-height: 1.78;
+    width: 374px;
+    margin-top: 46px;
+}
+
+.hero-wrap .info .desc span {
+    white-space: nowrap;
+}
+
+.hero-wrap .info .action {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero-wrap .info .btn-hero {
+    padding: 20px 41px 21px;
+    margin-right: 50px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-wrap .info .play:hover,
+.hero-wrap .info .btn-hero:hover {
+    opacity: 0.9;
+}
+
+.hero-wrap .info .play {
+    width: 62px;
+    height: 62px;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 15px 19px -18px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 0px 15px 19px -18px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 0px 15px 19px -18px rgba(0, 0, 0, 0.63);
+}
+
+.hero-wrap .images {
+    position: relative;
+}
+
+.hero-wrap .images .banner-hero {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    background: #e4f7f6;
+}
+
+/* Courses */
+
+.hero-wrap .images .courses,
+.hero-wrap .images .schedules,
+.hero-wrap .images .student {
+    position: absolute;
+}
+
+.hero-wrap .images .courses {
+    display: flex;
+    align-items: center;
+    bottom: 407px;
+    left: -40px;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    padding: 17px 25px 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-wrap .images .courses strong {
+    position: relative;
+    display: inline-block;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 55px;
+    line-height: normal;
+}
+
+.hero-wrap .images .courses img {
+    position: relative;
+    margin-right: 16px;
+}
+
+.hero-wrap .images .courses strong::before {
+    position: absolute;
+    top: 23px;
+    left: -48px;
+    display: block;
+    content: "";
+    width: 28px;
+    height: 4px;
+    border-radius: 999px;
+    background: #fff;
+}
+
+/* Schedules */
+
+.hero-wrap .images .schedules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 46px;
+    left: -65px;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-wrap .images .schedules strong {
+    color: #0d1111;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 16px;
+}
+
+.hero-wrap .images .schedules .chart {
+    margin-top: 16px;
+    position: relative;
+    width: 74px;
+    height: 6px;
+    border-radius: 999px;
+    background: #edf1f5;
+}
+
+.hero-wrap .images .schedules .chart-1::before {
+    position: absolute;
+    content: "";
+    width: 39px;
+    height: 6px;
+    border-radius: 999px;
+    background: #fb9899;
+}
+
+.hero-wrap .images .schedules .chart-2 {
+    margin-top: 12px;
+}
+
+.hero-wrap .images .schedules .chart-2::before {
+    position: absolute;
+    content: "";
+    width: 51px;
+    height: 6px;
+    border-radius: 999px;
+    background: #fb9899;
+}
+
+.hero-wrap .images .schedules .chart-3 {
+    margin-top: 10px;
+}
+
+.hero-wrap .images .schedules .chart-3::before {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 6px;
+    border-radius: 999px;
+    background: #fb9899;
+}
+
+.hero-wrap .images .schedules .chart-4 {
+    width: 26px;
+    margin-top: 16px;
+}
+
+/* Student */
+
+.hero-wrap .images .student {
+    right: 45px;
+    bottom: 41px;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-wrap .images .student .box {
+    padding: 17px 35px;
+}
+
+.hero-wrap .images .student .list {
+    display: flex;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+.hero-wrap .images .student .list .item {
+    margin-left: -7px;
+}
+
+.hero-wrap .images .student .list img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-wrap .images .student .list p {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.hero-wrap .images .student p {
+    display: inline-block;
+    text-align: left;
+}
+
+.hero-wrap .images .student strong {
+    text-align: left;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
