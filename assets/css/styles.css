@@ -661,6 +661,11 @@ a {
     height: 50px;
     border-radius: 50%;
     background: var(--primary-color);
+    cursor: pointer;
+}
+
+.feedback .info .controller button:hover {
+    opacity: 0.9;
 }
 
 .feedback .info .controller .next {
@@ -726,4 +731,41 @@ a {
 .feedback .images .avatar-5 {
     bottom: -110px;
     right: -139px;
+}
+
+/* ========= Register ========== */
+.register {
+    margin-top: 69px;
+    background: #DEF6F5;
+}
+
+.register .body {
+    display: flex;
+    align-items: center;
+    padding: 76px 0 88px;
+}
+
+.register .info{
+    width: 420px;
+}
+
+.register .info .title {
+    color: #070707;
+    line-height: normal;
+}
+
+.register .info .desc {
+    color: #767e7e;
+    line-height: normal;
+    margin-top: 18px;
+}
+
+.register .btn {
+    background: #2ac9bf;
+    padding: 25px 41px;
+    margin-left: 410px;
+}
+
+.register .btn:hover{
+    opacity: 0.9;
 }
