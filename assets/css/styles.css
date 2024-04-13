@@ -5,6 +5,11 @@ TỐI ƯU KHI CODE
     box-sizing: border-box; /* Hỗ trợ căn chỉnh khối */
 }
 
+html,
+body{
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
